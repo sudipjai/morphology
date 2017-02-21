@@ -326,6 +326,9 @@ main (int argc, char *argv[])
   free (info->src_ptr);
   free (info->dst_ptr);
 
+  fclose(fp_r);
+  fclose(fp_w);
+
   pthread_mutex_destroy (&lock);
 
 exit:
